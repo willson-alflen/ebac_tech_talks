@@ -10,7 +10,7 @@
     );
   }
 
-  &--ux-ui {
+  &--ui-ux {
     background-image: linear-gradient(
       variables.$blue-secondary,
       variables.$pink
@@ -25,8 +25,15 @@
     background-image: linear-gradient(variables.$yellow, variables.$pink);
   }
 
+  &--image-left {
+    .container {
+      flex-direction: row-reverse;
+    }
+  }
+
   .container {
     display: flex;
+    gap: 40px;
   }
 
   &__image {
@@ -34,8 +41,6 @@
   }
 
   &__details {
-    margin-right: 40px;
-
     &__title {
       font-size: 18px;
       font-weight: bold;
